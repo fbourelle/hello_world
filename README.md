@@ -1,2 +1,2 @@
-# hello_world
-just a test
+# Fourmis de Langton
+Algorithmie en JS
