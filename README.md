@@ -1,2 +1,4 @@
 # Fourmis de Langton
-Algorithmie en JS
+Algorithmie en JS et Jquery
+
+
