@@ -3,39 +3,48 @@
         <title>Fourmi</title>
         <meta charset="UTF-8">
         <script
-			  src="https://code.jquery.com/jquery-3.3.1.min.js"
-			  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-			  crossorigin="anonymous">
+  			  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  			  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  			  crossorigin="anonymous">
         </script>
         <style type="text/css">
             .blue{
                 color:aqua;
-
             }
-            .yellow{
+            .lila{
                 color:blueviolet;
-
-            } 
+            }
             .red{
                 color:red;
-            } 
+            }
+            .noir {
+              color: black;
+            }
+            body{font-family:arial; text-align:center;}
+            table{margin:auto; margin-top:1em;}
+            td{
+        				width:20px;
+        				height:20px;
+        				text-align:right;
+        				vertical-align:bottom;
+        				font-weight:bold;
+        				background-color:rgb(0, 0, 0);
+                        cursor: pointer;
+			      }
+                  td:hover {
+                      color: red;
+                  }
         </style>
-        
+
     </head>
-    
+
     <body>
-        <label>Dimension</label><br>
-        <input type="number" id="dimX" value="30"><br>
-        <input type="number" id="dimY" value="30"><br>
-       
-        <button id="go">Construct</button><br>
-        <button id="start">Start</button>
-        <button id="stop">Stop</button>
-                    
+        <input type="number" id="dimX" style="display:none" value="21">
+        <input type="number" id="dimY" style="display:none" value="21">
+        <button id="go">Build</button>
+        <button id="start" disabled>Start</button>
+        <button id="stop" disabled>Stop</button>
         <div id="fourmi"></div>
-        
         <script src="fourmi.js"></script>
-        
-        
     </body>
 </html>
